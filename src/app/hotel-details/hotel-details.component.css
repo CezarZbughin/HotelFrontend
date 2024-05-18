@@ -1,0 +1,57 @@
+.root{
+    width: 500px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+    background-color: #dfdfdf;
+}
+
+.room {
+    display: flex;
+    margin-top: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    height: 50px;
+    width: 350px;
+    background-color: #aab9d6;
+}
+
+.comments {
+    display: flex;
+    margin-top: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    height: 50px;
+    width: 350px;
+    background-color: #ffffff;
+}
+
+.reserve_button{
+    margin-top: 4px;
+    border-radius: 0px;
+    border-width: 0;
+    color: #dfdfdf;
+    font-size: 14px;
+    background: #62929E;
+    padding: 5px 10px 5px 10px;
+
+}
+
+.input_type{
+    background: #ffffff;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+    font-size: 14px;
+    color: #393D3F;
+    --placeHolder-color: #838485;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }

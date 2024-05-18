@@ -1,0 +1,33 @@
+
+.image_border {
+    border: solid;
+    border-color: #C6C5B9;
+    border-width: 50px;
+}
+
+.img{
+    height:650px; 
+    margin-left: auto; 
+    margin-right: 0;
+    margin-top: 75px;
+    float: right;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.text_box{
+    color : #393D3F;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 300px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+    font-size: 30px;
+    font-weight: bold;
+}

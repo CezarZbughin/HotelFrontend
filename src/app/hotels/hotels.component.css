@@ -1,0 +1,167 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.search_location{
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.filter_category{
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.date_picker{
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.prom_button{
+border: none;
+color: #dfdfdf;
+font-size: 12px;
+background: #62929E;
+padding: 5px 10px 5px 10px;
+height: 50px;
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.filter_button{
+border: none;
+color: #dfdfdf;
+font-size: 12px;
+background: #62929E;
+padding: 5px 10px 5px 10px;
+height: 50px;
+margin-left: 20px;
+margin-top: 10px;
+}
+
+.item_img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  box-shadow: #393D3F 0 5px 10px -5px;
+}
+
+.item_bot {
+  margin-top: var(--margin_top_var);
+  background-color: #ffffff;
+  min-height: 100px;
+  align-items: center;
+  padding: 5px;
+  box-shadow: var(--shadow_var);
+  transition: margin-top 100ms, box-shadow 100ms;
+}
+
+.item_text {
+  color: #393D3F;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item_desc {
+  margin: 5px;
+  color: #393D3F;
+  font-size: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: wrap;
+}
+
+.item {
+  width: 300px;
+  height: 420px;
+  margin: 30px;
+  --margin_top_var: 14px;
+  --shadow_var: #393D3F 0 5px 10px -5px;
+}
+
+.item:hover {
+  --margin_top_var: 7px;
+  --shadow_var: #393d3f4f 0 10px 13px 0px;
+}
+
+.details_button{
+border-radius: 0px;
+border-width: 0;
+color: #dfdfdf;
+font-size: 12px;
+background: #62929E;
+padding: 5px 10px 5px 10px;
+margin-left: 115px;
+margin-right: auto;
+text-align: center;
+}
+
+.details_button:hover {
+background: #48bedb;
+color: #ffffff;
+}
+
+.filter_button:hover {
+background: #48bedb;
+color: #ffffff;
+}
+
+.search_button:hover {
+background: #48bedb;
+color: #ffffff;
+}
+
+.favorite_icon {
+text-align:center;
+width: 34px;
+height:34px;
+font-size: 26px;
+color: rgb(216, 0, 76);
+transition: font-size 100ms, color 300ms;
+}
+
+.favorite_icon:hover {
+font-size: 34px;
+color: rgb(149, 0, 52);;
+}
+
+.unfavorite_icon {
+text-align:center;
+width: 34px;
+height:34px;
+font-size: 26px;
+color: rgb(72, 72, 72);
+transition: font-size 100ms, color 1000ms;
+}
+
+.unfavorite_icon:hover {
+font-size: 34px;
+color: rgb(141, 141, 141);
+}
+
+.favorite_clicked {
+text-align:center;
+width: 34px;
+height:34px;
+font-size: 26px;
+color: rgb(141, 141, 141);
+transition: font-size 100ms, color 300ms;
+}
+
+.favorite_clicked:hover {
+text-align:center;
+width: 34px;
+height:34px;
+font-size: 26px;
+color: rgb(255, 255, 255);
+transition: font-size 100ms, color 300ms;
+}

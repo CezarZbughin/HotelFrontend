@@ -1,0 +1,13 @@
+<p-toast [life]="850"/>
+<div class="root">
+    <p class="title">LOGIN</p>
+    <input class="login_input" #username matInput placeholder="Username">
+    <input type="password" class="login_input" #password matInput placeholder="Password">
+
+    <mat-dialog-actions class="button_box">
+        <button class="buttons" (click)="onLoginClick(username.value, password.value)">LOGIN</button>
+        <button class="buttons" mat-dialog-close>CANCEL</button>
+    </mat-dialog-actions>
+    
+    <button class="transparent_button" (click)="onCreateNewAccountClick()">CREATE A NEW ACCOUNT</button>
+</div>

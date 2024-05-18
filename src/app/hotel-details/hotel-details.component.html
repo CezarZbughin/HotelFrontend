@@ -1,0 +1,22 @@
+<p-toast [life]="850"/>
+<div style="height: 500px;">
+    <div class="root" style="min-height: 510px; margin-top: 0px;">
+        <p>Rooms:</p>
+        <p>{{data.hotel.name}}</p>
+        <div class="room" *ngFor="let room of data.hotel.rooms; let i = index">
+            
+            <input disabled={{!room.available}} style="width:20px" type="checkbox" [(ngModel)]="this.room_selected[i]">
+            <p style="width:75px">Room: </p>
+            <p style="width:75px">{{room.roomNumber}}</p>
+        </div>
+        <div>
+            <button class="reserve_button" (click)="onMakeReservationClick()">make reservation</button>
+        </div>
+        <p>Comments:</p>
+        <div class="comments" *ngFor="let review of this.reviews; let i = index">
+            <p>{{review.rating}} : {{review.comment}}</p>
+        </div>
+        <input #comment class="input_type" type="text"/>
+        <button class="reserve_button" (click)="onSendCommentClick(comment.value)">send comment</button>
+    </div>
+</div>

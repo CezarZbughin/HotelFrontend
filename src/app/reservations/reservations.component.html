@@ -1,0 +1,7 @@
+<p-toast />
+<div style="min-height:1100px">
+    <div class="reservation" *ngFor="let reservation of this.reservations; let i = index">
+        <p>{{reservation.rooms.length}} rooms, {{reservation.startDate}} -> {{reservation.endDate}}</p>
+        <button class="cancel_button" (click)="onCancelClick(reservation)">cancel</button>
+    </div>
+</div>

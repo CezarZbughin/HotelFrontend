@@ -1,0 +1,70 @@
+.login_input{
+    background: #dfdfdf;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
+    color: #393D3F;
+    --placeHolder-color: #838485;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+}
+
+.root {
+    width:250px;
+    height: 300px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.button_box{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-top : 20px;
+    margin-bottom : 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons{
+    border-radius: 2px;
+    border-width: 0;
+    color: #dfdfdf;
+    font-size: 14px;
+    height: 30px;
+    width: 75px;
+    background: #62929E;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px 5px 10px;
+}
+
+.buttons:hover {
+    background: #48bedb;
+    color: #ffffff;
+}
+
+.title{
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #393D3F;
+}
+
+.transparent_button{
+    margin-bottom: 30px;
+    color: #62929E;
+    font-size: 12px;
+    background: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.transparent_button:hover {
+    color: #48bedb;
+}

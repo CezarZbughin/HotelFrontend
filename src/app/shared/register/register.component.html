@@ -1,0 +1,11 @@
+<div class="root">
+    <p class="title">REGISTER</p>
+    <input class="login_input" #username matInput placeholder="Username">
+    <input type="password" class="login_input" #password matInput placeholder="Password">
+
+    <mat-dialog-actions class="button_box">
+        <button class="buttons" (click)="onRegisterClick(username.value, password.value)">REGISTER</button>
+        <button class="buttons" mat-dialog-close>CANCEL</button>
+    </mat-dialog-actions>
+
+</div>

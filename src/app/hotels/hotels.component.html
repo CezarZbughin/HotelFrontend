@@ -1,0 +1,43 @@
+<div style="display: flex;">
+  <div class="search_location">
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Max distance (Km)</mat-label>
+        <input matInput type="number" [(ngModel)]="maxDistance">
+      </mat-form-field>
+
+  </div>
+
+  <button class="filter_button" (click)="onApplyFiltersClick()">APPLY FILTERS</button>
+  <div style="margin-left: 100px; margin-top: 10px;">
+    <form [formGroup]="range">
+      <mat-form-field>
+        <mat-label>Enter a date range</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate  formControlName="start" placeholder="Start date">
+          <input matEndDate formControlName="end" placeholder="End date">
+        </mat-date-range-input>
+        <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+    </form>
+  </div>
+
+</div>
+
+<div class="grid">
+  <div class="item" *ngFor="let hotel of this.hotels; let i = index" (click)="onHotelClick(hotel)">
+    <img class="item_img"
+      src="https://www.italia.it/content/dam/tdh/en/interests/lazio/roma/roma-in-48-ore/media/20220127150143-colosseo-roma-lazio-shutterstock-756032350.jpg"
+      alt="image">
+    <div class="item_bot">
+      <div style="display: flex;">
+        <p class="item_text">{{hotel.name}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
